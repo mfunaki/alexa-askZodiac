@@ -1,0 +1,72 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StartOverIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "AskZodiacByADIntent",
+        "samples": [
+          "{BirthADYear} 年",
+          "{BirthADYear} 年です",
+          "{BirthADYear} 年生まれ",
+          "{BirthADYear} 年生まれです",
+          "西暦 {BirthADYear} 年",
+          "西暦 {BirthADYear} 年です",
+          "西暦 {BirthADYear} 年生まれ",
+          "西暦 {BirthADYear} 年生まれです"
+        ],
+        "slots": [
+          {
+            "name": "BirthADYear",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "AskZodiacByHeiseiIntent",
+        "samples": [
+          "平成 {BirthHeiseiYear}",
+          "平成 {BirthHeiseiYear} 年です",
+          "平成 {BirthHeiseiYear} 年生まれ",
+          "平成 {BirthHeiseiYear} 年生まれです"
+        ],
+        "slots": [
+          {
+            "name": "BirthHeiseiYear",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "AskZodiacByShowaIntent",
+        "samples": [
+          "昭和 {BirthShowaYear}",
+          "昭和 {BirthShowaYear} 年です",
+          "昭和 {BirthShowaYear} 年生まれ",
+          "昭和 {BirthShowaYear} 年生まれです"
+        ],
+        "slots": [
+          {
+            "name": "BirthShowaYear",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      }
+    ],
+    "invocationName": "えとスキル"
+  }
+}
